@@ -95,7 +95,7 @@ const diseaseCategories = [
   { 
     id: "dermatologist", 
     label: "Dermatologist", 
-    symptoms: ["Acne", "Rashes", "Skin infections", "Hair loss", "Fungal issues"] 
+    symptoms: ["Acne", "Rashes", "Skin infections", "Fungal issues"] 
   },
   { 
     id: "pediatrician", 
