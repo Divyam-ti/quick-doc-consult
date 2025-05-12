@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -88,18 +87,81 @@ const specializations = [
 
 // Disease categories
 const diseaseCategories = [
-  { id: "respiratory", label: "Respiratory Conditions", symptoms: ["Cough", "Shortness of Breath", "Wheezing"] },
-  { id: "cardiovascular", label: "Cardiovascular Diseases", symptoms: ["Chest Pain", "Palpitations", "Hypertension"] },
-  { id: "dermatological", label: "Skin Conditions", symptoms: ["Rash", "Itching", "Skin Lesions"] },
-  { id: "neurological", label: "Neurological Disorders", symptoms: ["Headache", "Dizziness", "Numbness"] },
-  { id: "musculoskeletal", label: "Musculoskeletal Issues", symptoms: ["Joint Pain", "Back Pain", "Muscle Weakness"] },
-  { id: "gastrointestinal", label: "Digestive System", symptoms: ["Abdominal Pain", "Nausea", "Diarrhea"] },
-  { id: "ent", label: "Ear, Nose, and Throat", symptoms: ["Sore Throat", "Ear Pain", "Nasal Congestion"] },
-  { id: "ophthalmic", label: "Eye Conditions", symptoms: ["Blurred Vision", "Eye Pain", "Redness"] },
-  { id: "urinary", label: "Urinary System", symptoms: ["Frequent Urination", "Burning Sensation", "Blood in Urine"] },
-  { id: "endocrine", label: "Hormonal Disorders", symptoms: ["Fatigue", "Weight Changes", "Excessive Thirst"] },
-  { id: "mental", label: "Mental Health", symptoms: ["Anxiety", "Depression", "Sleep Problems"] },
-  { id: "pediatric", label: "Pediatric Conditions", symptoms: ["Fever in Children", "Growth Issues", "Developmental Delays"] },
+  { 
+    id: "general_physician", 
+    label: "General Physician / Family Medicine", 
+    symptoms: ["Common colds", "Fever", "Fatigue", "Minor infections", "Headache"] 
+  },
+  { 
+    id: "dermatologist", 
+    label: "Dermatologist", 
+    symptoms: ["Acne", "Rashes", "Skin infections", "Hair loss", "Fungal issues"] 
+  },
+  { 
+    id: "pediatrician", 
+    label: "Pediatrician", 
+    symptoms: ["Child-specific issues", "Cough", "Growth", "Infections in kids"] 
+  },
+  { 
+    id: "gynecologist", 
+    label: "Gynecologist", 
+    symptoms: ["Menstrual issues", "Pregnancy", "PCOS", "Fertility"] 
+  },
+  { 
+    id: "psychiatrist", 
+    label: "Psychiatrist / Psychologist", 
+    symptoms: ["Anxiety", "Depression", "Sleep problems", "Behavioral concerns"] 
+  },
+  { 
+    id: "ent", 
+    label: "ENT Specialist", 
+    symptoms: ["Earache", "Sore throat", "Sinus", "Dizziness"] 
+  },
+  { 
+    id: "cardiologist", 
+    label: "Cardiologist", 
+    symptoms: ["Chest pain", "Palpitations", "High BP", "Heart health"] 
+  },
+  { 
+    id: "gastroenterologist", 
+    label: "Gastroenterologist", 
+    symptoms: ["Indigestion", "Stomach pain", "Acid reflux", "IBS"] 
+  },
+  { 
+    id: "orthopedic", 
+    label: "Orthopedic", 
+    symptoms: ["Joint pain", "Back pain", "Fractures", "Arthritis"] 
+  },
+  { 
+    id: "neurologist", 
+    label: "Neurologist", 
+    symptoms: ["Seizures", "Migraines", "Numbness", "Memory issues"] 
+  },
+  { 
+    id: "pulmonologist", 
+    label: "Pulmonologist", 
+    symptoms: ["Breathlessness", "Cough", "Asthma", "Post-COVID care"] 
+  },
+  { 
+    id: "urologist", 
+    label: "Urologist", 
+    symptoms: ["Urination issues", "UTIs", "Kidney pain", "Male fertility"] 
+  },
+  { 
+    id: "endocrinologist", 
+    label: "Endocrinologist", 
+    symptoms: ["Diabetes", "Thyroid issues", "Hormonal disorders"] 
+  },
+  { 
+    id: "ophthalmologist", 
+    label: "Ophthalmologist", 
+    symptoms: ["Eye strain", "Blurry vision", "Infections", "Injury"] 
+  },
+  { 
+    id: "dentist", 
+    label: "Dentist", 
+    symptoms: ["Toothache", "Gum swelling", "Cavity", "Braces"] 
+  }
 ];
 
 // Consultation types
